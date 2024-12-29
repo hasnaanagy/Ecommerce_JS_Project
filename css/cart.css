@@ -1,0 +1,184 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; 
+}
+body {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.products-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 1; 
+    padding: 20px;
+    gap: 20px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+
+.row.product-row:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+.product-info{
+    display: flex;
+    gap: 20px;
+}
+.product-info img{
+    border-radius: 6px;
+    width: 100px;
+    height: 80px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-1 p, .section-2 p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    margin: 5px 0;
+}
+.section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.section-2 p:hover {
+    cursor: pointer;
+}
+.section-2 p.plus , .section-2 p.minus
+{
+    color: white;
+    background-color: rgb(39, 41, 43);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 32px;
+   height: 32px;
+    text-align: center;
+    transition: .3s ease-in-out;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+.section-2 p.plus:hover,.section-2 p.minus:hover{
+    transform: scale(1.2);
+    font-size: 30px;
+    background-color: white;
+    color:rgb(39, 41, 43) ;
+    box-shadow: 2px 2px 2px grey ;
+    border:1px solid grey;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.total{
+    margin-top: 20px;
+}
+.check-out{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.buy-now {
+    display: none;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(39, 41, 43);
+    padding: 15px 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s, transform 0.3s;
+    -moz-transition: background-color 0.3s, transform 0.3s;
+    -ms-transition: background-color 0.3s, transform 0.3s;
+    -o-transition: background-color 0.3s, transform 0.3s;
+}
+
+.buy-now:hover {
+    color: rgb(39, 41, 43);
+    background-color: lightgray;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.empty-cart {
+    margin-top: 50%;
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: fadeInScale 1.5s ease-out forwards;
+    margin-top: 20px;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -webkit-animation: fadeInScale 1.5s ease-out forwards;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0; 
+        transform: scale(0.5); 
+    }
+    50% {
+        opacity: 0.5; 
+        transform: scale(1.1); 
+    }
+    100% {
+        opacity: 1; 
+        transform: scale(1); 
+    }
+}

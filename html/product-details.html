@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/product-detailes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="container-fluid my-nav">
+        <div class="row d-flex px-3 align-items-center">
+          <a class="logo" href="#">Shop</a>
+          <div class="col-5">
+            <ul>
+              <li class="mx-3">
+                <a href="" class="home">Home</a>
+              </li>
+              <li>
+                <a href="" class="contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mr-5 col-5 align-self-end d-flex justify-content-end section-2">
+            <ul>
+              <li class="mx-3 bag">
+                <div class="cart-counter"></div>
+                <a href="#"><img class="icon" src="../images/cart.png" alt="Cart"></a>
+              </li>
+              <li class="mx-3">
+                <a class="user-name"></a>
+              </li>
+              <li class="ms-3">
+                <a class="log-out">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid ">
+        <div class="product-section">
+        </div>
+        <section id="products"><button class="add-product">Add To Cart</button></section>
+      </div>
+      <footer class="footer">
+        <p> @copy rights reserved</p>
+        <img src="../images/up-arrow.png" alt="up" id="up">
+        </footer>
+        <script src="../js/product-deatiles.js" type="module"></script>
+        <script src="../services/update-cart-counter.js"></script>
+
+</body>
+</html>
